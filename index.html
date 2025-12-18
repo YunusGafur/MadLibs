@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Libs</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-        <div class="card">
+    <div class="card">
 
-            <div class="card-header">
-                <h1>My Super Wacky Day</h1>
-                <h4>Made 100% by Yunus Gafur</h4>
-            </div>
-
-            <div class="card-content">
-                <aside class="inputs" aria-label="MadLibs inputs">
-                    <h3>Fill the words</h3>
-                    <div class="input-grid">
-                        <label>Adjective
-                            <input type="text" placeholder="e.g. foggy">
-                        </label>
-                        <label>Silly name
-                            <input type="text" placeholder="e.g. Captain Zop">
-                        </label>
-                        <label>Verb
-                            <input type="text" placeholder="e.g. grabbed">
-                        </label>
-                        <label>Location
-                            <input type="text" placeholder="e.g. pantry">
-                        </label>
-                        <label>Food
-                            <input type="text" placeholder="e.g. donut">
-                        </label>
-                        <label>Emotion
-                            <input type="text" placeholder="e.g. dizzy">
-                        </label>
-                        <label>Animal
-                            <input type="text" placeholder="e.g. penguin">
-                        </label>
-                        <label>Clothing
-                            <input type="text" placeholder="e.g. top hat">
-                        </label>
-                        
-                    </div>
-
-                </aside>
-
-            
-                <section class="story">
-                    <p>On a [adjective] morning, [silly name] grabbed their [verb] and sprinted toward the [confusing location], only to find a [food item behaving strangely] spinning like it had [emotion]. Suddenly, a [animal] wearing a [bizarre article of clothing] popped out of [nonsensical substance] and demanded they [verb that implies chaos] before granting them a [magical object] that smelled like [smell that is worrying]. Inside, 
-                        a [hybrid creature] was [verb ending in -ing] in a way that bent [abstract concept], and to earn the [legendary item], they had to loudly 
-                        declare their favorite [mundane household object] while performing the [ridiculous dance move], 
-                        which immediately caused [plural noun] to [weird action] for no reason at all.</p>
-                </section>
-            </div>
-            <div class="loader-wrapper">
-                <button id="story">
-  <span class="loader-letter">G</span>
-  <span class="loader-letter">e</span>
-  <span class="loader-letter">n</span>
-  <span class="loader-letter">e</span>
-  <span class="loader-letter">r</span>
-  <span class="loader-letter">a</span>
-  <span class="loader-letter">t</span>
-  <span class="loader-letter">e</span>
-  <div class="loader"></div>
-  </button>
-</div>
+        <div class="card-header">
+            <h1>My Super Wacky Day</h1>
+            <h4>Made 100% by Yunus Gafur</h4>
         </div>
 
-<script src="java.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="card-content">
+            <aside class="inputs" aria-label="MadLibs inputs">
+                <h3>Fill the words</h3>
+                <div class="input-grid">
+                    <label><span class="label-text">Adjective</span>
+                        <input type="text" placeholder="e.g. foggy">
+                    </label>
+                    <label><span class="label-text">Silly name</span>
+                        <input type="text" placeholder="e.g. Captain Zop">
+                    </label>
+                    <label><span class="label-text">Verb</span>
+                        <input type="text" placeholder="e.g. grabbed">
+                    </label>
+                    <label><span class="label-text">Location</span>
+                        <input type="text" placeholder="e.g. pantry">
+                    </label>
+                    <label><span class="label-text">Food</span>
+                        <input type="text" placeholder="e.g. donut">
+                    </label>
+                    <label><span class="label-text">Emotion</span>
+                        <input type="text" placeholder="e.g. dizzy">
+                    </label>
+                    <label><span class="label-text">Animal</span>
+                        <input type="text" placeholder="e.g. penguin">
+                    </label>
+                    <label><span class="label-text">Clothing</span>
+                        <input type="text" placeholder="e.g. top hat">
+                    </label>
+                    <label><span class="label-text">Substance</span>
+                        <input type="text" placeholder="e.g. syrup">
+                    </label>
+                    <label><span class="label-text">Chaotic verb</span>
+                        <input type="text" placeholder="e.g. explode">
+                    </label>
+                    <label><span class="label-text">Magical Object</span>
+                        <input type="text" placeholder="e.g. wand">
+                    </label>
+                    <label><span class="label-text">Smell</span>
+                        <input type="text" placeholder="e.g. burnt toast">
+                    </label>
+                    <label><span class="label-text">Creature</span>
+                        <input type="text" placeholder="e.g. griffin">
+                    </label>
+                    <label><span class="label-text">Verb ending with -ing</span>
+                        <input type="text" placeholder="e.g. dancing">
+                    </label>
+                    <label><span class="label-text">Abstract Concept</span>
+                        <input type="text" placeholder="e.g. gravity">
+                    </label>
+                    <label><span class="label-text">Item</span>
+                        <input type="text" placeholder="e.g. spoon">
+                    </label>
+                    <label><span class="label-text">Plural noun</span>
+                        <input type="text" placeholder="e.g. cows">
+                    </label>
+                    <label><span class="label-text">Action</span>
+                        <input type="text" placeholder="e.g. cows">
+                    </label>
+
+                </div>
+
+            </aside>
+
+
+            <section class="story">
+                <h4>On a <span class="user-input">[adjective]</span> morning, <span class="user-input">[sillyname]</span> grabbed their <span class="user-input">[verb]</span> and sprinted toward the <span class="user-input">[confusing location]</span>, only to find a <span class="user-input">[food item behaving strangely]</span> spinning like it had <span class="user-input">[emotion]</span>. Suddenly, a <span class="user-input">[animal]</span> wearing a <span class="user-input">[bizarre article of clothing]</span> popped out of <span class="user-input">[nonsensical substance]</span> and demanded they <span class="user-input">[verb that implies chaos]</span> before granting them a <span class="user-input">[magical object]</span> that smelled like <span class="user-input">[smell that is worrying]</span>. Inside, a <span class="user-input">[hybrid creature]</span> was <span class="user-input">[verb ending in -ing]</span> in a way that bent <span class="user-input">[abstract concept]</span>, and to earn the <span class="user-input">[legendary item]</span>, which immediately caused <span class="user-input">[plural noun]</span> to <span class="user-input">[weird action]</span> for no reason at all.</h4>
+            </section>
+        </div>
+        <div class="loader-wrapper">
+            <button id="story" class="generate-btn" aria-label="Generate story">
+                <div class="loader"></div>
+                <div class="loader-center">
+                    <span class="loader-letter">G</span>
+                    <span class="loader-letter">e</span>
+                    <span class="loader-letter">n</span>
+                    <span class="loader-letter">e</span>
+                    <span class="loader-letter">r</span>
+                    <span class="loader-letter">a</span>
+                    <span class="loader-letter">t</span>
+                    <span class="loader-letter">e</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
