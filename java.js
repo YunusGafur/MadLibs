@@ -4,15 +4,15 @@ var inputs = document.querySelectorAll("input[type='text']");
 
 var storyWords = document.querySelectorAll(".user-input");
 
-var story = document.querySelector(".story");
+var storySection = document.querySelector(".story");
 
-button.addEventListener("click", showStory);
+button.addEventListener("click", generateStory);
 
-function showStory() {
+function generateStory() {
 
     storyWords.forEach(function (word, index) {
         word.textContent = inputs[index].value;
     });
-
-    story.style.display = "block";
+    
+    storySection.style.display = "block";
 }
