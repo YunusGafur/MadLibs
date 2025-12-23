@@ -1,16 +1,18 @@
 var button = document.getElementById("story");
 
-var words = document.querySelectorAll("input[type='text']");
+var inputs = document.querySelectorAll("input[type='text']");
 
-var placeholders = document.querySelectorAll(".user-input");
+var storyWords = document.querySelectorAll(".user-input");
 
-var storySection = document.querySelector(".story");
+var story = document.querySelector(".story");
 
-button.addEventListener("click", getWords);
+button.addEventListener("click", showStory);
 
-function getWords() {
-    placeholders.forEach(function (placeholder, index) {
-        placeholder.textContent = words[index].value;
+function showStory() {
+
+    storyWords.forEach(function (word, index) {
+        word.textContent = inputs[index].value;
     });
-    storySection.style.display = "block";
+
+    story.style.display = "block";
 }
